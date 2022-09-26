@@ -8,11 +8,11 @@ require("./db/mongoconnect");
 
 const app = express();
 
-// נותן גישה לכל הדומיינים לגשת לשרת שלנו
+// Gives access to all domains to access our server
 app.use(cors());
-// כדי שנוכל לקבל באדי
+// to get body
 app.use(express.json());
-// הגדרת תקיית הפאבליק כתקייה ראשית
+// Public folder to main folder
 app.use(express.static(path.join(__dirname,"public")))
 
 routesInit(app);

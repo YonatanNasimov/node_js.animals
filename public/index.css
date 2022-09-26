@@ -1,0 +1,39 @@
+/* body{
+    overflow-x: hidden;
+} */
+
+header{
+    min-height: 48px;
+    box-shadow: 0px 5px 15px 0px #000000;
+    background: rgb(38, 145, 187);
+}
+main{
+    min-height: 700px;
+}
+main h4{
+    font-weight: 200;
+}
+footer {
+    background: silver;
+    min-height: 48px;
+    box-shadow: 0px -5px 15px 0px #000000;
+}
+
+footer .container .icon a {
+    text-decoration: none;
+    color: black;
+}
+
+
+footer .container .icon i {
+    font-size: 2.5em;
+    padding: 8px;
+}
+@media (max-width:768px) {
+    footer .container .myFooter {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
